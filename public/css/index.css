@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ececec;
+}
+.join-message {
+  background-color: #fc1024;
+  width: 50rem;
+  height: 25rem;
+  margin: 8rem auto;
+  border-radius: 1.5rem;
+  opacity: 0.7;
+  box-shadow: #161515 1px 2px 2px 1px;
+  border: #14121170 solid;
+}
+
+.input-Container {
+  margin: 2px auto;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  top: 8rem;
+}
+
+#userName {
+  width: 50%;
+  height: 1.7rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.room {
+  width: 50%;
+  height: 1.7rem;
+  border-radius: 1rem;
+  text-align: center;
+  color: gray;
+  cursor: pointer;
+}
+
+.submit-btn {
+  margin-top: 0.5rem;
+  width: 10rem;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  height: 1.7rem;
+  font-size: large;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: whitesmoke;
+  color: #ee0e0e;
+}
+
+.input-Container label {
+  color: #ececec;
+  font-size: larger;
+}
+
+.join-message h1 {
+  text-align: center;
+  font-family: fantasy;
+  color: azure;
+  box-sizing: content-box;
+}

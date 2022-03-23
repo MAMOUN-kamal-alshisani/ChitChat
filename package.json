@@ -1,0 +1,32 @@
+{
+  "name": "chitchat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MAMOUN-kamal-alshisani/ChitChat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MAMOUN-kamal-alshisani/ChitChat/issues"
+  },
+  "homepage": "https://github.com/MAMOUN-kamal-alshisani/ChitChat#readme",
+  "dependencies": {
+    "date-fns": "^2.28.0",
+    "dateformat": "^5.0.3",
+    "dotenv": "^16.0.0",
+    "env": "^0.0.2",
+    "express": "^4.17.3",
+    "moment": "^2.29.1",
+    "querystring": "^0.2.1",
+    "socket.io": "^4.4.1",
+    "sweetalert": "^2.1.2"
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>ChitChat</title>
+  </head>
+  <body>
+    <div class="formarticle">
+      <div class="join-message">
+        <h1>ChitChat</h1>
+        <form class="form-Container" id="indexform" action="chat.html">
+          <div class="input-Container">
+            <label for="userName">Name: </label>
+            <input
+              type="text"
+              id="userName"
+              name="userName"
+              value="userName"
+              placeholder="Enter UserName"
+              required
+            />
+            <div class="roomInput">
+              <label for="room">Room: </label>
+              <select name="room" class="room" required>
+                <option value="games">games</option>
+                <option value="comics">comics</option>
+                <option value="anime/manga">anime/manga</option>
+              </select>
+            </div>
+            <button type="submit" class="submit-btn">Join</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script> -->
+  </body>
+</html>

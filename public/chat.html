@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/chat.css" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>ChitChat</title>
+  </head>
+  <body>
+    <!-- <div class="sidebarHeaders">
+      <header class="headers">
+      </header>
+    </div> -->
+   
+    <!-- <div class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left" style="display:none" id="mySidebar"> -->
+    <!-- <div class="containerForAll"> -->
+ 
+      <div>
+      
+      </div>
+   
+    <div class="NamesDiv" id="mySidebar">
+      <header class="divHeader">
+        <h1 class="closeHeader">ChitChat</h1>
+          
+        <button class="closeSideBarBtn" onclick="closeSideBar()">
+          <i class="material-icons" style="font-size:25px">cancel</i>
+        </button>
+     
+             
+           </header>
+    
+      <h4 id = 'roomHeader'>Room Name: </h4>
+      <p class="roomName"></p>
+      
+      <h4 id="userHeader">Users: </h4>
+      <ul class="users">
+      
+      </ul>
+    </div>
+    <!-- </div> -->
+
+    <!-- <div class="allContainer"> -->
+      
+
+    <!-- <div class="container"> -->
+    <div class="messageContainer">
+      <header class="divHeader">
+        <h1 class="formHeader1">ChitChat</h1>
+          
+        <a href="index.html" class="A-btn"><i class='fas fa-sign-out-alt' style="font-size:20px"></i>
+        </a>
+     
+             
+           </header>
+        <button class="sidebarBtn" onclick="openSideBar()" style="font-size:20px">&#9776;</button>
+      
+      <div class="messageOutPuts">
+        <div class="messagesDiv">
+          <div class="messagesDiv">
+     
+          </div>
+        </div>
+  
+      </div>
+      <form class="messageForm">
+        <div class="formInputs">
+          
+          <input type="text" id="message" value="message"  placeholder="Enter Message"/>
+
+          <button type="input" class="messageBtn">send</button>
+        </div>
+      </form>
+    <!-- </div> -->
+    <!-- </div> -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      function openSideBar() {
+        document.getElementById("mySidebar").style.display = "inline-block";
+      }
+      function closeSideBar() {
+        document.getElementById("mySidebar").style.display ="none";
+      }
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
