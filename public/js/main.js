@@ -46,10 +46,10 @@ function messageOutPut(chatmessage) {
   let divs = document.createElement("div");
   divs.classList.add("messageOutPuts");
   divs.innerHTML = ` <p class="namesTimes">
- ${chatmessage.userName}
-  <p>${chatmessage.date}</p>
-</p>
-<p>${chatmessage.text}</p>`;
+   ${chatmessage.userName}
+    <p>${chatmessage.date}</p>
+  </p>
+  <p>${chatmessage.text}</p>`;
   chatForm.appendChild(divs);
 }
 

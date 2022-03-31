@@ -28,30 +28,43 @@ li {
 }
 
 #roomHeader {
-  padding: 0.5rem;
-  font-weight: bolder;
+  margin: 1rem;
+  font-weight: 900;
+  font-size: larger;
   /* color: var(--light-color); */
   opacity: 0.7;
 }
 .roomName {
+  font-size: large;
   padding-left: 2.5rem;
-  color: var(--light-color);
+  color: darkred;
   opacity: 0.7;
   font-weight: bolder;
-  text-decoration: underline;
 }
-
+.roomName:hover {
+  padding-left: 2.5rem;
+  color: #fc1024;
+  cursor: pointer;
+}
 #userHeader {
-  padding: 0.5rem;
+  font-weight: 900;
+  font-size: larger;
+  padding: 1rem;
   /* color: var(--light-color); */
   opacity: 0.7;
 }
 .users {
+  font-size: large;
   padding-left: 2.5rem;
-  color: var(--light-color);
+  color: darkred;
   opacity: 0.7;
   font-weight: bolder;
-  text-decoration: underline;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.users:hover {
+  color: #fc1024;
 }
 .messageContainer {
   border: #07040470 solid;
@@ -74,18 +87,12 @@ li {
   overflow-y: auto;
   overflow-wrap: break-word;
 }
-.messageOutPuts {
-  position: relative;
-  background-color: var(--light-color);
-  border-radius: 0.4rem;
-  width: 30rem;
-  margin-left: 2rem;
-  margin-top: 1rem;
-}
+
 .NamesDiv {
   background-color: rgba(32, 32, 32, 0.575);
-  width: 20vw;
   height: 100vh;
+  max-width: max-content;
+  min-width: min-content;
   box-sizing: border-box;
   text-indent: 0.5rem;
   position: absolute;
@@ -196,4 +203,39 @@ li {
 }
 .closeSideBarBtn:hover {
   color: var(--background-color-a);
+}
+
+.messageOutPuts {
+  flex: 1;
+  /* position: relative; */
+  background-color: var(--light-color);
+  border-radius: 0.4rem;
+  width: 30rem;
+  margin: 2rem;
+  /* padding: 20px 30px; */
+  /* margin-left: 2rem;
+  margin-top: 1rem; */
+}
+
+.chtMessages {
+  background-color: #7386ff;
+  padding: 0.5rem;
+  margin-bottom: 4rem;
+}
+
+.usermsg {
+  margin-right: auto;
+  background-color: #5cb85c;
+}
+
+/* 
+-webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+-moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+-o-transform: matrix(-1, 0, 0, 1, 0, 0);
+transform: matrix(-1, 0, 0, 1, 0, 0); */
+.closeHeader {
+  /* margin-top: 2rem;
+  pad */
+  padding-top: 1rem;
+  margin-right: 5rem;
 }

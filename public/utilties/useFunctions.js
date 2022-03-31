@@ -1,14 +1,13 @@
-const { format } = require("date-fns");
-const today = format(new Date(), "h:mm a");
-
 const AllUsers = [];
 console.log(AllUsers);
+
+const dayjs = require("dayjs");
 
 const autoMessages = (userName, text) => {
   return {
     userName,
     text,
-    date: today,
+    date: dayjs().format("h:mm:a"),
   };
 };
 
@@ -21,19 +20,19 @@ const userRemove = (id) => {
 };
 
 const chatJoin = (socketID, userName, room) => {
-  userName = userName.trim();
-  room = room.trim();
+  // userName = userName.trim();
+  // room = room.trim();
 
   let duplicateName = AllUsers.find(
     (user) => user.room === room && user.userName === userName
   );
 
   if (!userName || !room) {
-    throw new Error("userName or room name is required!");
+    console.error("userName or room name is required!");
   }
 
   if (duplicateName) {
-    throw new Error("userName is already taken");
+    console.error("userName is already taken");
   }
   const user = { socketID, userName, room };
   AllUsers.push(user);
